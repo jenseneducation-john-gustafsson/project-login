@@ -64,8 +64,7 @@ export default {
           .auth()
           .createUserWithEmailAndPassword(this.email, this.password)
           .then(() => {
-            alert("Konto skapat!");
-            this.$router.replace({ name: "login" });
+            this.$router.replace({ name: "signed" });
           });
       } else {
         this.wrongPassword = "Lösenorden matchar inte!";
